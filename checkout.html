@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="resolution" content="1366x768" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Language" content="en" />
+		<meta name="description" content="Complete your purchase at MOVIO and enjoy fast, secure checkout. Review your order, choose your payment method and get ready to bring home unique, high-quality furniture and home decor accessories." />
+		<meta name="keywords" content="Movio, furniture, lighting, home decor, home accessories, modern design, interior design, unique furniture" />
+		<meta name="author" content="Ognjen Vidić 149/19" />
+		<!-- Shortcut Icon -->
+		<link rel="shortcut icon" href="assets/img/favicon.ico" />
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<!-- Font Awesome -->
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity = "sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin = "anonymous" referrerpolicy = "no-referrer" />
+		<!-- Title -->
+		<title>The MOVIO &verbar; Checkout</title>
+	</head>
+	<body>
+		<!-- Page Header -->
+		<header class="flex-row justify-content-between">
+			<div class="flex-row align-items-stretch">
+				<!-- Logo -->
+				<div class="logo"> 
+					<a href="index.html">
+						<img src="assets/img/logo.png" alt="MOVIO Logo" />
+					</a>
+				</div>
+				<!-- Navigation -->
+				<nav id="main-navigation">
+					<ul class="flex-row h-100">
+						<li>
+							<a href="#" class="flex-row justify-content-between bg-bronze text-white">Products <i class="fa fa-angle-down text-white"></i></a>
+						</li>
+						<li class="flex-row"><a href="index.html" class="flex-row">Home</a></li>
+						<li class="flex-row"><a href="about-us.html" class="flex-row">About Us</a></li>
+						<li class="flex-row"><a href="shop.html" class="flex-row">Shop</a></li>
+						<li class="flex-row"><a href="contact.html" class="flex-row">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- Icons -->
+			<nav id="icons-navigation">
+				<ul class="flex-row">
+					<li>
+						<a href="#">
+							<i class="fa fa-user icon-style"></i>
+						</a>
+					</li>
+					<li>
+						<a href="checkout.html">
+							<i class="fa fa-shopping-cart icon-style"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-heart icon-style"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Page Main Content -->
+		<main class="w-80 m-auto flex-column">
+			<!-- Social Media -->
+			<nav id="social-media-nav">
+				<ul>
+					<li>
+						<a href="https://www.instagram.com/" target="_blank" class="flex-row justify-content-center w-100 h-100">
+							<i class="fab fa-instagram text-white"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/" target="_blank" class="flex-row justify-content-center  w-100 h-100">
+							<i class="fab fa-facebook-f text-white"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/" target="_blank" class="flex-row justify-content-center  w-100 h-100">
+							<i class="fab fa-twitter text-white"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/" target="_blank" class="flex-row justify-content-center  w-100 h-100">
+							<i class="fab fa-linkedin-in text-white"></i>
+						</a>
+					</li>
+				</ul>
+			</nav> 
+			<!-- Checkout -->
+			<section>
+				<!-- Section Header -->
+				<header class="w-80 m-auto text-center section-header slide-in-animation">
+					<div>
+						<hgroup>
+							<h2 class="text-bronze">Checkout</h2>
+							<h1>Complete your purchase</h1>
+						</hgroup>
+					</div>
+					<div>
+						<p>Almost done! Just a few more steps to finalize your order. Review your details, choose your preferred payment method and get ready to enjoy your new items.</p>
+					</div>
+				</header>
+				<!-- Section Content -->
+				<main class="mt-7">
+					<section id="order-section" class="flex-row justify-content-between">
+						<!-- Order Form -->
+						<div>
+							<form method="post" action="#" id="order-form" name="order-form">
+								<div class="flex-row justify-content-between">
+									<!-- First Name -->
+									<div class="w-50">
+										<label for="first-name">
+											First Name:<span>*</span>
+										</label>
+										<input type="text" name="first-name" class="form-control" />
+									</div>
+									<!-- Last Name -->
+									<div class="w-50">
+										<label for="last-name">
+											Last Name:<span>*</span>
+										</label>
+										<input type="text" name="last-name" class="form-control" />
+									</div>
+								</div>
+								<!-- Address -->
+								<div class="w-100">
+									<label for="address">
+										Address:<span>*</span>
+									</label>
+									<input type="text" id="address" name="address" class="form-control" />
+								</div>
+								<div class="flex-row justify-content-between">
+									<!-- City -->
+									<div class="w-75">
+										<label for="cities">
+											City:<span>*</span>
+										</label>
+										<select id="cities" name="cities" class="form-control">
+											<option value="0" disabled selected>&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;</option>
+											<option value="1">London</option>
+											<option value="2">Birmingham</option>
+											<option value="3">Liverpool</option>
+										</select>
+									</div>
+									<!-- Zip Code -->
+									<div class="w-25">
+										<label for="zip-code">
+											Zip Code:<span>*</span>
+										</label>
+										<input type="text" id="zip-code" name="zip-code" class="form-control"  />
+									</div>
+								</div>
+								<div class="flex-row justify-content-between">
+									<!-- E-mail -->
+									<div class="w-50">
+										<label for="email">
+											E-mail:<span>*</span>
+										</label>
+										<input type="email" name="email" class="form-control" />
+									</div>
+									<!-- Phone Number -->
+									<div class="w-50">
+										<label for="phone-number">
+											Phone Number:<span>*</span>
+										</label>
+										<input type="tel" name="phone-number" class="form-control" placeholder="+44 20 7888 0958" />
+									</div>
+								</div>
+								<div class="flex-row justify-content-between">
+									<!-- Card Number -->
+									<div class="w-75">
+										<label for="card-number">
+											Card Number:<span>*</span>
+										</label>
+										<input type="text" id="card-number" name="card-number" class="form-control" placeholder="4916123456789012" />
+									</div>
+									<!-- Expiration Date -->
+									<div class="w-25">
+										<label for="expiration-date">
+											MM/YY:<span>*</span>
+										</label>
+										<input type="text" id="expiration-date" name="expiration-date" class="form-control" placeholder="03/25"/>
+									</div>
+								</div>
+								<!-- Message -->
+								<div class="w-100">
+									<label for="message">Message:</label>
+									<textarea name="message" class="form-control"></textarea>			 
+								</div>
+								<!-- Newsletter -->
+								<div class="flex-row">
+									<input type="checkbox" name="sing-up-for-newsletter" />
+									<label for="sing-up-for-newsletter" class="small">Yes, sign me up for the MOVIO<span class="copyright-entity">&copy;</span> Newsletter. I confirm that I
+									I'm over 18 and would be happy to receive updates and exclusive offers via e-mail.</label>
+								</div>
+								<!-- Place Order Button -->
+								<div>
+									<input type="submit" id="btn-order" class="w-100 btn-form text-white bg-gray text-center bg-color-hover-transition" value="Place Order" />
+								</div>
+							</form>
+						</div>
+						<!-- Order Review -->
+						<div class="bg-light-gray">
+							<section id="order-review">
+								<header>
+									<h3 class="text-bronze">Order Review</h3>
+								</header>
+								<main>
+									<!-- Order Item -->
+									<article class="order-item">
+										<table>
+											<thead></thead>
+											<tbody>
+												<tr>
+													<td class="order-item-picture position-relative">
+														<span class="flex-row justify-content-center position-absolute text-white rounded-circle">1.</span>
+														<img src="assets/img/products/sofa-element-wave-orange.png" alt="Sofa Element Wave Orange" />
+													</td>
+													<td class="order-item-details">
+														<h5 class="order-item-title">Sofa Element Wave Orange</h5>
+														<h6 class="order-item-category text-gray">Sofa Elements</h6>
+														<input type="number" name="order-item-quantity" min="1" value="1" step="1" class="form-control order-item-quantity" />
+													</td>
+												</tr>
+												<tr class="order-item-subtotal">
+													<td>Subtotal:</td>
+													<td>
+														1 x 93.00<span class="euro-entity">&euro;</span> = <span>93.00</span><span class="euro-entity">&euro;</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</article>
+									<!-- Order Item -->
+									<article class="order-item">
+										<table>
+											<thead></thead>
+											<tbody>
+												<tr>
+													<td class="order-item-picture position-relative">
+														<span class="flex-row justify-content-center position-absolute text-white rounded-circle">2.</span>
+														<img src="assets/img/products/mug-funny-animal-alpaca-12cm.png" alt="Mug Funny Animal Alpaca 12cm" />
+													</td>
+													<td class="order-item-details">
+														<h5 class="order-item-title">Mug Funny Animal Alpaca 12<span class="measurement-unit">cm</span></h5>
+														<h6 class="order-item-category text-gray">Coffee Mugs</h6>
+														<input type="number"  name="order-item-quantity" min="1" value="2" step="1" class="form-control order-item-quantity" />
+													</td>
+												</tr>
+												<tr class="order-item-subtotal">
+													<td>Subtotal:</td>
+													<td>
+														2 x 14.95<span class="euro-entity">&euro;</span> = <span>29.90</span><span class="euro-entity">&euro;</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</article>
+									<!-- Order Item -->
+									<article class="order-item">
+										<table>
+											<thead></thead>
+											<tbody>
+												<tr>
+													<td class="order-item-picture position-relative">
+														<span class="flex-row justify-content-center position-absolute text-white rounded-circle">3.</span>
+														<img src="assets/img/products/cushion-catena-chain-50x50cm.png" alt="Cushion Catena Chain 50x50cm" />
+													</td>
+													<td class="order-item-details">
+														<h5 class="order-item-title">Cushion Catena Chain 50<span>x</span>50<span class="measurement-unit">cm</span></h5>
+														<h6 class="order-item-category text-gray">Cushions</h6>
+														<input type="number"  name="order-item-quantity" min="1" value="1" step="1" class="form-control order-item-quantity" />
+													</td>
+												</tr>
+												<tr class="order-item-subtotal">
+													<td>Subtotal:</td>
+													<td>
+														1 x 29.90<span class="euro-entity">&euro;</span> = <span>29.90</span><span class="euro-entity">&euro;</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</article>
+								</main>
+								<footer class="w-100 flex-column">
+									<div class = "w-100 flex-row justify-content-between">
+										<span>Total for payment:</span>
+										<span>152.80<span class="euro-entity">&euro;</span></span>
+									</div>
+									<img src="assets/img/paying-methods.png" alt="Paying Methods" />
+									<a href="shop.html" class="btn bg-bronze text-center bg-color-hover-transition">Continue Shopping</a>
+                 					<p class="text-gray">Please note that shipping time are in addition to production times for all regions &ndash; weekends and public holidays are not included in the specified days. Orders are produced starting the next business day &mdash; for instance, orders placed on Friday begin production on Monday.</p>
+								</footer>
+							</section>
+						</div>
+					</section>
+				</main>
+			</section>
+		</main>
+
+		<!-- Page Footer -->
+		<footer class="flex-column mt-7">
+			<!-- First Block -->
+			<div class="flex-column">
+				<!-- Logo -->
+				<div class="logo">
+					<img src="assets/img/logo.png" alt="MOVIO Logo" />
+				</div>
+				<!-- Information Block -->
+				<span class="text-beige">London &mdash; United Kingdom</span>
+				<ul class="flex-row">
+					<li>(+44) 20 7946 0958</li>
+					<li>311 Oxford Street, London W1C 2HP</li>
+					<li>
+						<a href="mailto:contact@movio-design.co.uk">contact@movio-design.co.uk</a>
+					</li>
+				</ul>
+			</div>
+			<hr/>
+			<!-- Copyright & Links -->
+			<div class="flex-row justify-content-between">
+				<small>Copyright &copy; 2024 MOVIO &verbar; Furniture, lighting and home decor accessories</small>	
+				<nav>
+					<ul class="flex-row"> 
+						<li><a href="assets/sitemap.xml" target="_blank" class="text-red">Sitemap</a></li>
+						<li><a href="assets/rss.xml" target="_blank" class="text-red">RSS</a></li>
+						<li><a href="about-author.html" class="text-red">About Author</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</body>
+</html>
