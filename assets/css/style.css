@@ -251,16 +251,15 @@ body > main:not(.m-0) {margin: 70px auto;}
 }
 
 .expand-list-transition {
-    transition: max-height 0.5s ease-in-out; 
+    transition: max-height 0.3s ease-in-out; 
  }
 
 .hover-effect:hover + .expand-list-transition  {
     max-height: 1000px;       
-    transition: max-height 0.5s ease-in-out; 
 }
 
 .rotate-icon-transition {
-    transition: transform 0.3s ease; 
+    transition: transform 0.1s ease; 
 }
 
 .hover-effect:hover .rotate-icon-transition {
@@ -1409,4 +1408,3 @@ iframe {
 #info-about-author p:not(:first-child) {
     margin-top: 20px;
 }
-
