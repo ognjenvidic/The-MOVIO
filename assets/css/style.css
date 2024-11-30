@@ -849,34 +849,82 @@ form input[type="submit"] {
     background-position: 95% center;
 }
 
-#section-products > footer a {
+#section-products > main {
+    margin: 40px 0 50px;
+    align-items: flex-end;
+}
+
+#section-products .product-card {
+    width: calc((100% - 60px)/4);
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+#section-products .product-card:nth-of-type(4n) {
+    margin-right: 0 !important; 
+}
+
+#section-products .product-card:nth-of-type(n+14) img {
+    width: 82%;
+}
+
+#section-products .product-card:nth-child(14) figcaption {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#section-products .product-badge-new {
+    left: 13px;
+}
+
+#section-products .product-badge {top: -23px !important;}
+
+#section-products article:nth-child(6) .product-badge-sale,
+#section-products article:nth-child(11) .product-badge-sale {
+    left: 8px !important;
+}
+
+#pagination {align-self: flex-end;}
+
+#pagination a {
     height: 40px;
     width: 40px;
     border-radius: 8px;
     border: 1px solid var(--medium-gray);
+    padding-top: 2px;
+}
+
+#pagination li:not(:first-child, :last-child) a {
     padding-top: 3px;
 }
 
-#section-products > main {
-    margin: 40px 0;
+#pagination .fa-angle-left {
+    margin-right: 1px;
 }
 
-#section-products > footer a:hover,
-#section-products > footer a:hover i {
+#pagination .fa-angle-right {
+    margin-left: 1px;
+}
+
+#pagination .current-page,
+#pagination a:hover,
+#pagination a:hover i {
     font-weight: 600;
 }
 
-#section-products > footer a:hover {
+#pagination .current-page,
+#pagination a:hover {
     border: 2px solid var(--bronze);
 }
 
-#section-products > footer li:not(:last-child) {
+#pagination li:not(:last-child) {
     margin-right: 5px;
 }
 
 .layout-option:hover i,
-#section-products > footer a:hover,
-#section-products > footer a:hover i {
+#pagination .current-page,
+#pagination a:hover,
+#pagination a:hover i {
     color: var(--bronze);
 }
 
