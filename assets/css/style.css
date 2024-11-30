@@ -275,7 +275,7 @@ body > header * {color: var(--light-gray);}
     font-size: 15px;
 }
 
-#main-navigation a:hover {
+#main-navigation li:not(:first-child) a:hover {
     color: var(--light-beige);
 }
 
