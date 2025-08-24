@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
 /* Variables */
 
 :root {
@@ -39,9 +37,9 @@ img {width: 100%;}
 
 h1, h2, h3 {font-weight: 700;}
 
-h2, h3 {
+h1, h3 {
     text-transform: uppercase; 
-    font-size: 14px; 
+    font-size: 13px; 
     letter-spacing: 2px;
 }
 
@@ -142,7 +140,7 @@ body > main:not(.m-0) {margin: 70px auto;}
 
 .btn i {margin-left: 7px;}
 
-.icon-style {
+.fa-cart-shopping {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px var(--white);
             text-stroke: 1px var(--white);
@@ -293,7 +291,7 @@ body > header * {color: var(--light-gray);}
 }
 
 #main-navigation li:not(:first-child) a:hover {
-    color: var(--light-beige);
+    color: var(--bronze);
 }
 
 #main-navigation li:first-child a {
@@ -323,8 +321,12 @@ body > header * {color: var(--light-gray);}
 #icons-navigation .fa-heart {font-size: 22px;}
 
 #icons-navigation a:hover i {
-    -webkit-text-stroke: 1px var(--light-beige);
-            text-stroke: 1px var(--light-beige);
+    color: var(--bronze);
+}
+
+#icons-navigation a:hover i.fa-cart-shopping {
+    -webkit-text-stroke: 1px var(--bronze) !important;
+            text-stroke: 1px var(--bronze) !important;
 }
 
 /* Page Footer Styles */
@@ -510,16 +512,16 @@ form input[type="submit"] {
 
 /* Section Header Styles */
 
-.section-header > div:last-child {
+.section-header > p {
     margin-top: 20px;
 }
 
-.section-header h2,
+.section-header h1,
 .section-header h3 {
     margin-bottom: 23px;
 }
 
-.section-header h1 {
+.section-header h2 {
     font-size: 40px;
     line-height: 43px;
 } 
@@ -577,6 +579,10 @@ form input[type="submit"] {
     height: 100%;
     font-size: 12px;
     padding-top: 3px;
+}
+
+.product-card i {
+    color: var(--white);
 }
 
 .product-card figcaption {
@@ -653,11 +659,11 @@ form input[type="submit"] {
 
 .slider-section article {width: 19%;}
 
-.slider-section .product-card .fa-shopping-cart {
+.slider-section .product-card .fa-cart-shopping {
     margin-right: 2px;
 }
 
-.slider-section .product-card:nth-child(4) .fa-shopping-cart {
+.slider-section .product-card:nth-child(4) .fa-cart-shopping {
     margin-right: 0 !important;
 }
 
@@ -680,11 +686,9 @@ form input[type="submit"] {
 #hero-section > div {width: 49.5%;}
 
 #hero-section h2 {
-    font-size: 12px;
-    margin-bottom: 23px;
+    font-size: 48px;
+    margin-top: 23px;
 }
-
-#hero-section h1 {font-size: 48px;}
 
 #hero-section .btn i {
     top: -2px;
@@ -782,7 +786,7 @@ form input[type="submit"] {
     z-index: -1;
 }
 
-#section-the-mission > main {width: 43%;}
+#section-the-mission > div {width: 43%;}
 
 #the-mission-text p:first-child,
 #section-timeless-materials .section-header p {
@@ -951,6 +955,11 @@ form input[type="submit"] {
     border: 2px solid var(--bronze);
 }
 
+#room-list a:hover i {
+    -webkit-text-stroke: 1.5px var(--bronze);
+            text-stroke: 1.5px var(--bronze); 
+}
+
 #section-products {width: 75%;}
 
 #section-products > header * {
@@ -972,7 +981,7 @@ form input[type="submit"] {
     background-position: 95% center;
 }
 
-#section-products > main {
+#section-products > div {
     margin: 40px 0 50px;
     align-items: flex-end;
 }
@@ -1111,15 +1120,15 @@ form input[type="submit"] {
     margin-right: 5px;
 }
 
-#product-details > main {
+#product-details > div {
     margin-top: 10px;
 }
 
-#product-details > main > div {
+#product-details > div > div {
     margin: 30px 0 40px;
 }
 
-#product-details > main > div:not(#price-container) > * {
+#product-details > div > div:not(#price-container) > * {
     height: 49px;
 }
 
@@ -1171,10 +1180,14 @@ form input[type="submit"] {
     margin: 0 !important;
 }
 
-#product-details > main > div > a {
+#product-details > div > div > a {
     width: 41.5%;
     margin: 0 0 0 8px !important;
     padding-top: 20px;
+}
+
+#product-details .btn {
+    margin-top: 0 !important;
 }
 
 #product-details i {
@@ -1236,7 +1249,7 @@ form input[type="submit"] {
     align-self: flex-start;
 }
 
-#order-review main {margin: 50px 0 40px;}
+#order-review div {margin: 50px 0 40px;}
 
 .order-item-picture {width: 110px;}
 
@@ -1350,7 +1363,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 #contact-info p,
-#contact-info main li:not(:last-child) {
+#contact-info div li:not(:last-child) {
     margin-bottom: 20px;
 }
 
